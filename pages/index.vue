@@ -1,24 +1,21 @@
 <template>
-  <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        demo-stw
-      </h1>
-      <h2 class="subtitle">
-        demo for stw website
-      </h2>
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+  <div>
+    <div class="section">
+      <div class="container">
+        <div>
+          <logo />
+          <h1 class="title">
+            T-Tech
+          </h1>
+          <h2 class="subtitle">
+            Fast, customize website solution for startups.
+          </h2>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <h1>About</h1>
       </div>
     </div>
   </div>
@@ -35,9 +32,15 @@ export default {
 </script>
 
 <style>
+.section {
+  padding: 70px 0;
+  position: relative;
+  background: #fff;
+}
+
 .container {
   margin: 0 auto;
-  min-height: 100vh;
+  min-height: 60vh;
   display: flex;
   justify-content: center;
   align-items: center;
