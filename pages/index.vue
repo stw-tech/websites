@@ -83,7 +83,7 @@
         </div>
       </div>
     </div>
-    <div class="section section-ins section-about">
+    <div id="solution" class="section section-ins section-about">
       <div class="container">
         <div>
           <h1 class="title">
@@ -154,7 +154,7 @@
     <div id="team" class="section section-ins section-team">
       <div class="container">
         <div>
-          <h1 class="title mb-10">
+          <h1 class="title">
             Team
           </h1>
           <div>
