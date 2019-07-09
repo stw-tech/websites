@@ -27,14 +27,18 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: [
+    '~plugins/vue-scrollto.js',
+    { src: '~/plugins/vue-scroll-reveal.js', ssr: false }
+  ],
   /*
    ** Nuxt.js modules
    */
   modules: [
     // Doc: https://bootstrap-vue.js.org/docs/
     'bootstrap-vue/nuxt',
-    '@nuxtjs/eslint-module'
+    '@nuxtjs/eslint-module',
+    'vue-scrollto/nuxt'
   ],
   /*
    ** Build configuration
@@ -44,5 +48,14 @@ export default {
      ** You can extend webpack config here
      */
     extend(config, ctx) {}
+  },
+  router: {
+    scrollBehavior(to, from, savedPosition) {
+      if (to.hash) {
+        return {
+          selector: to.hash
+        }
+      }
+    }
   }
 }

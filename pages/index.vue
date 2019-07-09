@@ -6,11 +6,80 @@
         <div>
           <logo />
           <h1 class="title">
-            T-Tech
+            STW-Tech
           </h1>
           <h2 class="subtitle">
-            Fast, Customize Website Solution for Startups.
+            Fast, Stable, Scalable IT Solution.
           </h2>
+        </div>
+      </div>
+    </div>
+    <div id="product" class="section section-ins section-product">
+      <div class="container">
+        <div>
+          <h1 class="title">
+            Product
+          </h1>
+          <h2 class="subtitle">
+            整合式的 IT 解決方案
+          </h2>
+          <div>
+            <b-container fluid>
+              <b-row v-scroll-reveal.reset="{ duration: 800 }" align-h="center">
+                <b-col md="2">
+                  <b-img
+                    src="/svg/computer-1.svg"
+                    fluid
+                    alt="Responsive image"
+                  />
+                  <h4 class="mt-4">
+                    Web Service
+                  </h4>
+                </b-col>
+                <b-col md="2">
+                  <b-img
+                    src="/svg/documents.svg"
+                    fluid
+                    alt="Responsive image"
+                  />
+                  <h4 class="mt-4">
+                    E-mail & Office Software
+                  </h4>
+                </b-col>
+                <b-col md="2">
+                  <div>
+                    <b-img
+                      src="/svg/binder.svg"
+                      width="1000"
+                      fluid
+                      alt="Responsive image"
+                    />
+                    <h4 class="mt-4">
+                      Storage Space
+                    </h4>
+                  </div>
+                </b-col>
+                <b-col md="2">
+                  <b-img src="/svg/list.svg" fluid alt="Responsive image" />
+                  <h4 class="mt-4">
+                    Project Management
+                  </h4>
+                </b-col>
+                <b-col md="2">
+                  <b-img src="/svg/chat.svg" fluid alt="Responsive image" />
+                  <h4 class="mt-4">
+                    Communication & Consolidation
+                  </h4>
+                </b-col>
+                <b-col md="2">
+                  <b-img src="/svg/receipt.svg" fluid alt="Responsive image" />
+                  <h4 class="mt-4">
+                    Accounting Issue
+                  </h4>
+                </b-col>
+              </b-row>
+            </b-container>
+          </div>
         </div>
       </div>
     </div>
@@ -18,25 +87,90 @@
       <div class="container">
         <div>
           <h1 class="title">
-            服務介紹
+            Our Advantage
           </h1>
           <h2 class="subtitle">
-            快速建立新創形象頁面
+            .
           </h2>
-          <p>詳細內容</p>
+          <div
+            v-scroll-reveal.reset="{ duration: 800 }"
+            class="service-contents"
+          >
+            <ul class="list-unstyled">
+              <b-media
+                class="mt-4"
+                right-align
+                vertical-align="center"
+                tag="li"
+              >
+                <b-img
+                  slot="aside"
+                  blank-color="#fff"
+                  width="200"
+                  alt="placeholder"
+                  src="/svg/startup.svg"
+                />
+
+                <h5 class="mt-0 mb-1 subtitle" style="text-align:right">
+                  Fast, Stable, Scalable Construstion.
+                </h5>
+              </b-media>
+              <b-media class="mt-4" vertical-align="center" tag="li">
+                <b-img
+                  slot="aside"
+                  blank-color="#fff"
+                  width="200"
+                  alt="placeholder"
+                  src="/svg/tablet.svg"
+                />
+
+                <h5 class="mt-0 mb-1 subtitle">
+                  Establish All IT Service You Need.
+                </h5>
+              </b-media>
+              <b-media
+                class="mt-4"
+                right-align
+                vertical-align="center"
+                tag="li"
+              >
+                <b-img
+                  slot="aside"
+                  blank-color="#fff"
+                  width="200"
+                  alt="placeholder"
+                  src="/svg/meeting.svg"
+                />
+
+                <h5 class="mt-0 mb-1 subtitle" style="text-align:right">
+                  Consult When You Have Any Problem.
+                </h5>
+              </b-media>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-    <div class="section section-ins section-team">
+    <div id="team" class="section section-ins section-team">
       <div class="container">
         <div>
-          <h1 class="title">
-            團隊簡介
+          <h1 class="title mb-10">
+            Team
           </h1>
-          <h2 class="subtitle">
-            專業人士，提供專業服務
-          </h2>
-          <p>人物介紹</p>
+          <div>
+            <b-card-group v-scroll-reveal.reset="{ duration: 800 }" deck>
+              <b-card
+                title="NAME"
+                img-src="https://picsum.photos/300/300/?image=41"
+                img-alt="Image"
+                img-top
+              >
+                <b-card-text>
+                  Info
+                </b-card-text>
+              </b-card>
+            </b-card-group>
+          </div>
         </div>
       </div>
     </div>
@@ -69,7 +203,7 @@ export default {
   background: linear-gradient(
     0deg,
     rgba(3, 224, 150, 0.253),
-    rgba(19, 11, 10, 0.9)
+    rgba(128, 127, 121, 0.308)
   );
 }
 
@@ -86,7 +220,7 @@ export default {
 }
 
 .section-about {
-  background: #ccc;
+  background: rgba(175, 180, 169, 0.658);
 }
 
 .section-team {
@@ -96,7 +230,7 @@ export default {
 .container {
   padding: 70px 0;
   margin: 0 auto;
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -126,7 +260,8 @@ export default {
 }
 
 .section-top .subtitle {
-  color: #d3d8e0;
+  color: #eaf0f8;
+  letter-spacing: 1.5px;
 }
 .section-ins .title {
   font-size: 56px;
@@ -143,5 +278,11 @@ export default {
 
 .links {
   padding-top: 15px;
+}
+
+.service-contents {
+  text-align: left;
+  float: left;
+  width: 750px;
 }
 </style>
