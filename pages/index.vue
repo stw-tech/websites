@@ -160,7 +160,7 @@
           <div>
             <b-card-group v-scroll-reveal.reset="{ duration: 800 }" deck>
               <b-card
-                title="NAME"
+                title="Conrad lan"
                 img-src="https://picsum.photos/300/300/?image=41"
                 img-alt="Image"
                 img-top
@@ -170,6 +170,20 @@
                 </b-card-text>
               </b-card>
             </b-card-group>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="info" class="section section-info">
+      <div class="container">
+        <div>
+          <h1 class="subtitle">
+            Info
+          </h1>
+          <div>
+            <p>sTw-tech inc.</p>
+            <p>service@stw-tech.com</p>
+            <p>0800-XXX-XXX</p>
           </div>
         </div>
       </div>
@@ -227,6 +241,10 @@ export default {
   background: #eee;
 }
 
+.section-info {
+  background: #35495e;
+}
+
 .container {
   padding: 70px 0;
   margin: 0 auto;
@@ -274,6 +292,14 @@ export default {
   color: #526488;
   word-spacing: 5px;
   padding-top: 15px;
+}
+
+.section-info .subtitle {
+  color: aliceblue;
+}
+
+.section-info p {
+  color: aliceblue;
 }
 
 .links {
