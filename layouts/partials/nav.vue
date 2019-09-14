@@ -2,7 +2,7 @@
   <header>
     <b-navbar toggleable="lg" type="dark" variant="dark">
       <b-navbar-brand href="/">
-        STW-Tech
+        Remoneer
       </b-navbar-brand>
       <b-collapse v-if="isRoot" id="nav-collapse" is-nav>
         <b-navbar-nav>

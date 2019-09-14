@@ -6,7 +6,7 @@
         <div>
           <logo />
           <h1 class="title">
-            STW-Tech
+            Remoneer
           </h1>
           <h2 class="subtitle">
             Fast, Stable, Scalable IT Solution.
@@ -181,8 +181,8 @@
             Info
           </h1>
           <div>
-            <p>sTw-tech inc.</p>
-            <p>service@stw-tech.com</p>
+            <p>Remoneer inc.</p>
+            <p>service@remoneer.com</p>
             <p>0800-XXX-XXX</p>
           </div>
         </div>

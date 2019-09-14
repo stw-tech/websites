@@ -1,7 +1,7 @@
 {
-  "name": "demo-stw",
+  "name": "demo-remoneer",
   "version": "1.0.0",
-  "description": "demo for stw website",
+  "description": "demo for remoneer website",
   "author": "ZengSQi",
   "private": true,
   "scripts": {
